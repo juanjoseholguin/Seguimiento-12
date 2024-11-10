@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Contactos Juan José Holguín</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestión de Contactos de Holguín ;D</h1>
+        <section id="contact-form">
+            <h2>Agregar o Editar Contacto:</h2>
+            <form id="form">
+                <input type="text" id="name" placeholder="Nombre" required>
+                <input type="tel" id="phone" placeholder="Teléfono" required pattern="[0-9]*">
+                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="address" placeholder="Dirección">
+                <button type="button" id="saveContactButton">Guardar Contacto</button>
+            </form>
+        </section>
+        <section id="contacts-list">
+            <h2>Contactos Guardados</h2>
+            <div id="contacts"></div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
